@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Encontrado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Olá! Você encontrou o <span id="petNameDisplay">(nome)</span>!</h1>
+        <p class="subtitle">Que sorte a dele te encontrar!</p>
+        <div class="image-container">
+            <img id="petImageDisplay" src="default_pet.png" alt="Pet">
+            <input type="file" id="petImageInput" accept="image/*" style="display: none;">
+        </div>
+        <p>Ele é meu melhor amigo e estou muito aliviado em saber que está seguro.</p>
+        <p>Por favor, entre em contato comigo clicando no ícone do WhatsApp — irei buscá-lo o mais rápido possível.</p>
+        <a id="whatsappLink" href="#" target="_blank">
+            <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon">
+        </a>
+        <p><strong>Muito obrigado por sua ajuda!</strong></p>
+
+        <div id="formContainer">
+            <input type="text" id="petNameInput" placeholder="Nome do pet">
+            <input type="tel" id="whatsappInput" placeholder="Seu número de WhatsApp (apenas números)">
+            <button onclick="saveData()">Salvar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
